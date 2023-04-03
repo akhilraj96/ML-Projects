@@ -37,4 +37,5 @@ venv.bak/
    This is a file listing all the dependencies of the project.
 
 3. src\
+
    This folder contains all the source files of the project.
