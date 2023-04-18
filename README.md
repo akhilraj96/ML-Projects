@@ -26,16 +26,56 @@ venv.bak/
 
 ## Project Setup
 
-1. setup.py
+```
+MLProjects
+│   .gitignore
+│   README.md
+│   requirements.txt
+│   setup.py
+│
+└───src
+│   │   __init__.py
+│   │   exception.py
+│   │   logger.py
+│   │   utils.py
+│   │
+│   └───components
+│   │   │   __init__.py
+│   │   │   data_ingestion.py
+│   │   │   data_transformation.py
+│   │   │   model_trainer.py
+│   │
+│   └───pipeline
+│       │   __init__.py
+│       │   predict_pipeline.py
+│       │   train_pipeline.py
+│
+└───env
+│
+└───logs
+│
+└───MLProjects.egg-info
 
-   The setup script is the centre of all activity in bulding, distributing and installing required modules.
+```
 
-   In the script an external file(requirements.txt) is used to install the requirements for the project.
+- setup.py
 
-2. requirements.txt
+  The setup script is the centre of all activity in bulding, distributing and installing required modules.
 
-   This is a file listing all the dependencies of the project.
+  In the script an external file(requirements.txt) is used to install the requirements for the project.
 
-3. src\
+- requirements.txt
 
-   This folder contains all the source files of the project.
+  This is a file listing all the dependencies of the project.
+
+- src\
+
+  This folder contains all the source files of the project.
+
+  - exception.py
+
+    To create a custom exception
+
+  - logger.py
+
+    To create a logging template
