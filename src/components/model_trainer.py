@@ -88,7 +88,8 @@ class ModelTrainer:
                 y_train=y_train,
                 x_test=x_test,
                 y_test=y_test,
-                models = models
+                models = models,
+                params=params
             )
 
             # To get best model score from dect
